@@ -25,10 +25,10 @@ export class AddContact extends React.Component {
       ...this.state,
     };
     this.props.onFormSubmit(contact);
-    this.setState({
+      this.setState({
       name: "",
       number: "",
-    });
+     });
   };
 
   render() {

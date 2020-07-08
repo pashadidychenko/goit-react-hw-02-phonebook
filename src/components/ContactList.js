@@ -4,17 +4,15 @@ import PropTypes from "prop-types";
 
 const ContactList = ({ contactList, deleteContact }) => {
   return (
-    <>
-      <ul>
-        {contactList.map((contact) => (
-          <ContactListItem
-            deleteContact={() => deleteContact(contact.id)}
-            contact={contact}
-            key={contact.id}
-          />
-        ))}
-      </ul>
-    </>
+    <ul>
+      {contactList.map((contact) => (
+        <ContactListItem
+          deleteContact={() => deleteContact(contact.id)}
+          contact={contact}
+          key={contact.id}
+        />
+      ))}
+    </ul>
   );
 };
 

@@ -25,16 +25,20 @@ git commit -m "коментарий к проэкту"
 
 далее
 
-git remote add <name> <url>
+git remote add origin <url>
 
 потом
 
-git push --set-upstream <name> master
+git push -u origin master
 
 Пример:
-git remote add goit-react-hw-02-phonebook https://github.com/pashadidychenko/goit-react-hw-02-phonebook.git
-git push --set-upstream goit-react-hw-02-phonebook master
+git remote add origin https://github.com/pashadidychenko/goit-react-hw-02-phonebook.git
+git push -u origin master
 
 далее
 
 npm run deploy
+
+Все остальные страницы можно пушить с помощью
+
+git push
